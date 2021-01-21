@@ -12,13 +12,12 @@ new Vue({
         /* FIN NO TOUCH */
         // Lorsqu'un nouveau message doit être affiché à l'écran, cette fonction est appelée
         async newMessage(fromUser, message, isPrivate) {
-            console.log(fromUser, message, isPrivate);
-            this.messages.push(message)
+            console.log(fromUser, message, isPrivate, "---newMessage");
         },
         // À chaque 2-3 secondes, cette fonction est appelée. Il faudra donc mettre à jour la liste des membres
         // connectés dans votre interface.
         memberListUpdate(members) {
-            console.log(members);
+            console.log(members, "memberListUpdate");
         }
     },
     /* NO TOUCH */
